@@ -11,3 +11,5 @@ RUN cd /tmp && tar xvfz tomcat.tar.gz
 ## change the directory to /tmp amd Untar the downloaded file.
 RUN cp -Rv /tmp/apache-tomcat-10.0.21/* /usr/local/tomcat/ 
 ## Copy the untared files to /usr/local/tomcat folder which you created in step7 and also update the folder name (10.0.21) to the location you downloaded.
+ADD https://tomcat.apache.org/tomcat-7.0-doc/appdev/sample/sample.war /usr/local/tomcat/webapps
+## add the same war file from the above link to the location /usr/local/tomcat/webapps
